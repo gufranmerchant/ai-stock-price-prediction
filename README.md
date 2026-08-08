@@ -1,2 +1,29 @@
-# AI-Predicting-Stock-Prices-2021
-Ever since I saw the movie The Wolf of Wall Street, I was fascinated by it! So today, I have AI Predicting Stock Prices Python edition. Disclaimer: Now, Before we start, I want to say, as fascinating as AI predicting stock prices sounds, this is not financial advice in any shape or form. It will take the last 60 days of data and guess a single day into the future. If we tune it and modify it to be more sophisticated, it may predict the price more accurately. But as of now, this is just a proof of concept. Don't use this to make investment decisions.
+# AI Stock Price Prediction
+
+LSTM-based time-series forecasting model predicting next-day stock closing prices from
+historical market data.
+
+## Approach
+
+- Collected and preprocessed financial data using `yfinance`, `pandas`, and
+  `MinMaxScaler`, building supervised learning sequences from historical price windows.
+- Implemented a multi-layer LSTM architecture (TensorFlow/Keras) with dropout
+  regularisation to reduce overfitting and improve stability on unseen data.
+- Evaluated performance by generating real-time predictions and visualising results with
+  Matplotlib to track trend accuracy against actuals.
+
+## Stack
+
+Python · TensorFlow/Keras · Pandas · yfinance · Matplotlib · scikit-learn (MinMaxScaler)
+
+## Status
+
+Proof-of-concept model, not intended as investment advice. Built to explore time-series
+forecasting architecture and evaluation methodology for sequential financial data.
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+python predicting_stock_prices.py
+```
